@@ -1,6 +1,7 @@
 package J04Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -12,12 +13,17 @@ Output: the size of list after removing all occurrences of element
 Execution time limit: 1 second
  */
 public class Collections12 {
-    int removeAll(int[] list, int element) {
+    public static int removeAll(int[] list, int element) {
         List<Integer> aList = new ArrayList<>();
         for (int i : list) {
             aList.add(i);
         }
 
         return aList.size();
+    }
+
+    public static void main(String[] args) {
+        int[] list = {1, 2, 3};
+        System.out.println(removeAll(list, 1));
     }
 }
