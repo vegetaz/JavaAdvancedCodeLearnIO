@@ -18,7 +18,9 @@ public class Collections12 {
         for (int i : list) {
             aList.add(i);
         }
-
+        List<Integer> bList = new ArrayList<>();
+        bList.add(element);
+        aList.removeAll(bList);
         return aList.size();
     }
 
